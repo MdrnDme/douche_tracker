@@ -1,16 +1,34 @@
-# ICE Community Alert System - iOS App
+# Douche Tracker: Community Accountability Platform
 
-A comprehensive React Native iOS application for community-based alert management and emergency notifications. This app provides real-time alerts with interactive mapping, filtering capabilities, and demographic data integration.
+A React Native iOS application designed to expose and track problematic behavior in communities. Because accountability matters, and hiding behind anonymity shouldn't protect those who make spaces toxic for others.
+
+This isn't about public shaming - it's about transparency and giving communities the tools to identify patterns of harmful behavior before they escalate.
+
+## Core Concept
+
+Community spaces - whether online forums, workplaces, or social groups - often struggle with individuals who consistently engage in toxic behavior while avoiding consequences. These individuals typically:
+
+• Hide behind pseudonyms or shift between identities
+• Target vulnerable community members
+• Escalate gradually to test boundaries  
+• Retreat when confronted, only to resurface elsewhere
+
+This platform provides communities with tools to:
+
+• Document patterns of problematic behavior across platforms
+• Maintain verified incident reports with timestamps and context
+• Identify repeat offenders who cycle through different identities
+• Enable informed decision-making about community membership
 
 ## Features
 
-🚨 **Real-time Alerts**: Live community alerts with severity levels
-🗺️ **Interactive Maps**: Location-based alert visualization with custom markers
-🔍 **Smart Filtering**: Filter alerts by severity, category, date, and location
-📱 **iOS Native**: Optimized for iOS with native UI patterns
-👥 **Demographics**: Community population and vulnerability data
-🔔 **Notifications**: Push notifications for critical alerts
-📍 **Location Services**: GPS-based proximity alerts
+🕵️ **Pattern Recognition**: Track behavior patterns across multiple platforms and identities
+📍 **Location Mapping**: Visualize incident clusters and identify problem areas
+🔍 **Smart Filtering**: Filter reports by severity, category, date, and verification status
+📱 **iOS Native**: Optimized interface for secure, private reporting
+👥 **Community Verification**: Peer-reviewed incident validation system
+🔔 **Alert System**: Notifications for repeat offenders or escalating situations
+📊 **Analytics Dashboard**: Community health metrics and trend analysis
 
 ## Technology Stack
 
@@ -35,8 +53,8 @@ A comprehensive React Native iOS application for community-based alert managemen
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd ICECommunityAlert
+git clone https://github.com/MdrnDme/douche_tracker.git
+cd douche_tracker
 ```
 
 2. Install dependencies:
@@ -63,47 +81,47 @@ npm run ios
 
 ```
 src/
-├── components/          # Reusable UI components
-│   ├── AlertCard.tsx   # Individual alert display
-│   ├── AlertMap.tsx    # Interactive map component
-│   └── FilterModal.tsx # Alert filtering interface
-├── data/               # Sample data and constants
-│   └── sampleAlerts.ts # Mock alert data
-└── types/              # TypeScript type definitions
-    └── Alert.ts        # Core data types
+├── components/          # Core UI components
+│   ├── AlertCard.tsx   # Incident report display
+│   ├── AlertMap.tsx    # Geographic incident mapping
+│   └── FilterModal.tsx # Report filtering interface
+├── data/               # Sample data and patterns
+│   └── sampleAlerts.ts # Mock incident reports
+└── types/              # TypeScript definitions
+    └── Alert.ts        # Incident data structures
 ```
 
-## Alert Types and Severity Levels
+## Report Categories and Severity Levels
 
-### Severity Levels
-- 🔵 **Low**: General information, minimal impact
-- 🟡 **Medium**: Moderate concern, some impact expected
-- 🟠 **High**: Significant concern, considerable impact
-- 🔴 **Critical**: Emergency situation, immediate action required
+### Severity Classification
+- 🔵 **Monitoring**: Questionable behavior worth documenting
+- 🟡 **Concerning**: Clear pattern of problematic conduct
+- 🟠 **Escalating**: Behavior causing measurable harm to community
+- 🔴 **Critical**: Immediate threat requiring intervention
 
-### Alert Categories
-- 🌧️ **Weather**: Severe weather conditions
-- 🚨 **Emergency**: Public safety emergencies
-- 🚗 **Traffic**: Road closures and transportation
-- 🏘️ **Community**: Neighborhood announcements
-- 🔒 **Security**: Safety and security alerts
-- 🏥 **Health**: Public health advisories
+### Incident Categories
+- 🎭 **Identity Manipulation**: Sockpuppeting, ban evasion, false personas
+- 🎯 **Targeted Harassment**: Sustained campaigns against individuals
+- 💬 **Platform Abuse**: Gaming systems, vote manipulation, spam
+- 🏘️ **Community Disruption**: Trolling, derailing, inflammatory behavior
+- 🔒 **Privacy Violations**: Doxxing, sharing personal information
+- 🚫 **Discrimination**: Hate speech, prejudicial targeting
 
-## Development
+## Development Quick Start
 
-### Running the App
+### Running the Application
 
-For iOS:
+For iOS development and testing:
 ```bash
 npx react-native run-ios
 ```
 
-For debugging:
+For debugging and cache issues:
 ```bash
 npx react-native start --reset-cache
 ```
 
-### Building for Production
+### Production Builds
 
 ```bash
 npx react-native run-ios --configuration Release
@@ -111,116 +129,67 @@ npx react-native run-ios --configuration Release
 
 ## Configuration
 
-### Maps Setup
-The app uses Google Maps for iOS. To set up:
+### Privacy and Security
+This application prioritizes user privacy and data security:
 
-1. Get a Google Maps API key
-2. Add the key to `ios/ICECommunityAlert/AppDelegate.mm`
-3. Enable required APIs in Google Cloud Console
+1. All incident reports are encrypted locally before transmission
+2. Reporter identities are protected through secure anonymization
+3. Data is stored with zero-knowledge architecture where possible
+4. Geographic data is fuzzy-matched to prevent exact location tracking
 
-### Permissions
-Required iOS permissions:
-- Location Services
-- Push Notifications
-- Camera (for reporting alerts)
+### Required iOS Permissions
+- Location Services (for incident mapping)
+- Push Notifications (for community alerts)
+- Camera (for evidence documentation)
+- Secure Enclave (for identity verification)
+
+## Ethical Framework
+
+This platform operates under strict ethical guidelines:
+
+**What This Is:**
+- A tool for documenting verifiable harmful behavior
+- A system for protecting vulnerable community members
+- A way to identify patterns that might otherwise go unnoticed
+- A platform for informed community decision-making
+
+**What This Is Not:**
+- A tool for harassment or vigilante justice
+- A platform for unsubstantiated accusations
+- A system for settling personal disputes
+- A way to bypass proper legal or administrative channels
+
+All reports must be:
+- Factual and verifiable
+- Related to community harm
+- Submitted in good faith
+- Accompanied by appropriate evidence where possible
 
 ## Contributing
 
+Community-driven development is essential for this project. When contributing:
+
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+2. Create a feature branch (`git checkout -b feature/CommunityProtection`)
+3. Ensure your code follows privacy-first principles
+4. Test thoroughly on iOS devices
+5. Submit a pull request with detailed documentation
 
-## License
+## Legal Disclaimer
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This software is provided for legitimate community protection purposes. Users are responsible for:
+- Ensuring compliance with local laws regarding privacy and data collection
+- Using the platform ethically and in good faith
+- Understanding that this tool supplements, but does not replace, proper legal channels
+- Maintaining appropriate evidence standards for any reports
 
 ## Support
 
-For support and questions:
-- Create an issue in the repository
-- Contact the development team
-- Check the documentation
+For technical support or ethical guidance:
+- Open an issue in the repository
+- Review the community guidelines
+- Consult the ethical framework documentation
 
 ---
 
-Built with ❤️ for community safety and awareness.
-
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Built for communities that refuse to tolerate those who hide behind masks while making spaces unsafe for others.
