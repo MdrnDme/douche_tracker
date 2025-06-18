@@ -1,34 +1,40 @@
-# Douche Tracker: Community Accountability Platform
+# Douche Tracker
 
-A React Native iOS application designed to expose and track problematic behavior in communities. Because accountability matters, and hiding behind anonymity shouldn't protect those who make spaces toxic for others.
+A ## Features
 
-This isn't about public shaming - it's about transparency and giving communities the tools to identify patterns of harmful behavior before they escalate.
+🎯 **ICE Activity Mapping**: Real-time locations of raids, checkpoints, and operations
+📍 **Geographic Alerts**: Proximity warnings when ICE is reported nearby
+🔍 **Activity Filtering**: Sort by operation type, time, and verification status
+📱 **iOS Optimized**: Secure, anonymous reporting interface
+👥 **Community Verification**: Peer-reviewed sighting validation
+🚨 **Real-time Alerts**: Instant notifications for ICE activity in your area
+📊 **Pattern Analysis**: Track enforcement patterns and operational schedulesive iOS app that tracks ICE movements and operations in real-time.
 
-## Core Concept
+Communities need to know when ICE is operating in their area. This app crowdsources sightings, raids, checkpoints, and enforcement activities to keep people informed and safe.
 
-Community spaces - whether online forums, workplaces, or social groups - often struggle with individuals who consistently engage in toxic behavior while avoiding consequences. These individuals typically:
+Because knowing where they are could save someone's life.
 
-• Hide behind pseudonyms or shift between identities
-• Target vulnerable community members
-• Escalate gradually to test boundaries  
-• Retreat when confronted, only to resurface elsewhere
+## What It Does
 
-This platform provides communities with tools to:
+ICE operates with deliberate opacity, making it hard for communities to protect themselves. This app:
 
-• Document patterns of problematic behavior across platforms
-• Maintain verified incident reports with timestamps and context
-• Identify repeat offenders who cycle through different identities
-• Enable informed decision-making about community membership
+• **Maps ICE activity** in real-time based on community reports
+• **Tracks raid locations** and enforcement patterns
+• **Identifies checkpoint locations** and times of operation
+• **Documents enforcement tactics** with timestamps and locations
+• **Sends alerts** when ICE activity is reported nearby
+
+The goal is transparency. ICE wants to operate in the shadows - this app brings their activities into the light so communities can make informed decisions about their safety.
 
 ## Features
 
-🕵️ **Pattern Recognition**: Track behavior patterns across multiple platforms and identities
-📍 **Location Mapping**: Visualize incident clusters and identify problem areas
-🔍 **Smart Filtering**: Filter reports by severity, category, date, and verification status
-📱 **iOS Native**: Optimized interface for secure, private reporting
-👥 **Community Verification**: Peer-reviewed incident validation system
-🔔 **Alert System**: Notifications for repeat offenders or escalating situations
-📊 **Analytics Dashboard**: Community health metrics and trend analysis
+🎯 **Pattern Detection**: Spot repeat offenders across platforms and identities
+📍 **Geographic Mapping**: See where incidents cluster 
+🔍 **Smart Filtering**: Sort by severity, type, and verification status
+📱 **iOS Optimized**: Native interface for secure reporting
+👥 **Community Verification**: Peer-reviewed incident validation
+� **Early Warning System**: Get notified when known troublemakers appear
+📊 **Behavior Analytics**: Track escalation patterns and community health
 
 ## Technology Stack
 
@@ -82,30 +88,30 @@ npm run ios
 ```
 src/
 ├── components/          # Core UI components
-│   ├── AlertCard.tsx   # Incident report display
-│   ├── AlertMap.tsx    # Geographic incident mapping
-│   └── FilterModal.tsx # Report filtering interface
+│   ├── AlertCard.tsx   # ICE activity report display
+│   ├── AlertMap.tsx    # Geographic ICE activity mapping
+│   └── FilterModal.tsx # Activity filtering interface
 ├── data/               # Sample data and patterns
-│   └── sampleAlerts.ts # Mock incident reports
+│   └── sampleAlerts.ts # Mock ICE activity reports
 └── types/              # TypeScript definitions
-    └── Alert.ts        # Incident data structures
+    └── Alert.ts        # ICE activity data structures
 ```
 
-## Report Categories and Severity Levels
+## Activity Categories and Alert Levels
 
-### Severity Classification
-- 🔵 **Monitoring**: Questionable behavior worth documenting
-- 🟡 **Concerning**: Clear pattern of problematic conduct
-- 🟠 **Escalating**: Behavior causing measurable harm to community
-- 🔴 **Critical**: Immediate threat requiring intervention
+### Alert Priority
+- 🔵 **Routine**: Standard ICE presence, no immediate action
+- 🟡 **Active**: ICE conducting operations in area
+- 🟠 **Raid**: ICE conducting enforcement raids
+- 🔴 **Emergency**: Large-scale operation or immediate danger
 
-### Incident Categories
-- 🎭 **Identity Manipulation**: Sockpuppeting, ban evasion, false personas
-- 🎯 **Targeted Harassment**: Sustained campaigns against individuals
-- 💬 **Platform Abuse**: Gaming systems, vote manipulation, spam
-- 🏘️ **Community Disruption**: Trolling, derailing, inflammatory behavior
-- 🔒 **Privacy Violations**: Doxxing, sharing personal information
-- 🚫 **Discrimination**: Hate speech, prejudicial targeting
+### Activity Types
+- 🚐 **Vehicle Sightings**: ICE vehicles spotted in area
+- � **Workplace Raids**: ICE targeting businesses and workplaces
+- 🏠 **Residential Operations**: ICE activity at homes or apartments
+- 🛑 **Checkpoints**: ICE checkpoints on roads or transit
+- 🏛️ **Court Activity**: ICE presence at courthouses
+- � **Detention**: Reports of ICE detentions or arrests
 
 ## Development Quick Start
 
@@ -130,66 +136,67 @@ npx react-native run-ios --configuration Release
 ## Configuration
 
 ### Privacy and Security
-This application prioritizes user privacy and data security:
+This application prioritizes reporter safety and anonymity:
 
-1. All incident reports are encrypted locally before transmission
-2. Reporter identities are protected through secure anonymization
-3. Data is stored with zero-knowledge architecture where possible
-4. Geographic data is fuzzy-matched to prevent exact location tracking
+1. All ICE activity reports are encrypted locally before transmission
+2. Reporter identities are completely anonymized 
+3. Location data is fuzzy-matched to protect exact reporting locations
+4. No personal information is stored or transmitted
+5. App can be used without creating accounts or providing identifying information
 
 ### Required iOS Permissions
-- Location Services (for incident mapping)
-- Push Notifications (for community alerts)
-- Camera (for evidence documentation)
-- Secure Enclave (for identity verification)
+- Location Services (for ICE activity mapping)
+- Push Notifications (for proximity alerts)
+- Camera (for documenting ICE presence)
+- Background App Refresh (for real-time alerts)
 
-## Ethical Framework
+## Usage Guidelines
 
-This platform operates under strict ethical guidelines:
+This platform operates under strict safety guidelines:
 
 **What This Is:**
-- A tool for documenting verifiable harmful behavior
-- A system for protecting vulnerable community members
-- A way to identify patterns that might otherwise go unnoticed
-- A platform for informed community decision-making
+- A tool for documenting ICE enforcement activity
+- A community safety and awareness system  
+- A way to track patterns of ICE operations
+- A platform for informed decision-making about personal safety
 
 **What This Is Not:**
-- A tool for harassment or vigilante justice
-- A platform for unsubstantiated accusations
-- A system for settling personal disputes
-- A way to bypass proper legal or administrative channels
+- A tool for harassment or interference with law enforcement
+- A platform for unverified or false reports
+- A system for encouraging illegal activity
+- A way to obstruct legitimate law enforcement operations
 
-All reports must be:
-- Factual and verifiable
-- Related to community harm
-- Submitted in good faith
-- Accompanied by appropriate evidence where possible
+All reports should be:
+- Factual observations of ICE activity
+- Submitted to help community safety
+- Based on direct observation when possible
+- Focused on operational patterns, not individuals
 
 ## Contributing
 
-Community-driven development is essential for this project. When contributing:
+Community safety depends on accurate information. When contributing:
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/CommunityProtection`)
+2. Create a feature branch (`git checkout -b feature/SafetyEnhancement`)
 3. Ensure your code follows privacy-first principles
 4. Test thoroughly on iOS devices
 5. Submit a pull request with detailed documentation
 
 ## Legal Disclaimer
 
-This software is provided for legitimate community protection purposes. Users are responsible for:
-- Ensuring compliance with local laws regarding privacy and data collection
-- Using the platform ethically and in good faith
-- Understanding that this tool supplements, but does not replace, proper legal channels
-- Maintaining appropriate evidence standards for any reports
+This software is provided for community awareness and safety purposes. Users are responsible for:
+- Ensuring compliance with local laws regarding information sharing
+- Using the platform to enhance community safety, not obstruct law enforcement
+- Understanding this tool provides information, not legal advice
+- Reporting accurate information to the best of their ability
 
 ## Support
 
-For technical support or ethical guidance:
+For technical support:
 - Open an issue in the repository
-- Review the community guidelines
-- Consult the ethical framework documentation
+- Review the usage guidelines
+- Check the privacy documentation
 
 ---
 
-Built for communities that refuse to tolerate those who hide behind masks while making spaces unsafe for others.
+Built for communities that deserve transparency about enforcement activities in their neighborhoods.
