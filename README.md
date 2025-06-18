@@ -1,6 +1,24 @@
 # Douche Tracker
 
-A ## Features
+Track ICE operations in real-time. 
+
+ICE operates like cowards - sneaking around, targeting vulnerable people, hiding their movements from communities. This app exposes their activities so people can protect themselves.
+
+Screw their secrecy. Communities deserve to know when these jerks are in their neighborhood.
+
+## What It Does
+
+ICE thinks they can skulk around unnoticed. Wrong.
+
+• **Maps ICE activity** in real-time from community reports
+• **Tracks raid patterns** so you know when they're coming
+• **Exposes checkpoint locations** before they trap people
+• **Documents their tactics** with proof and timestamps
+• **Alerts your community** when ICE shows up nearby
+
+Transparency is the enemy of oppression. ICE hates being watched - that's exactly why we need to watch them.
+
+## Features
 
 🎯 **ICE Activity Mapping**: Real-time locations of raids, checkpoints, and operations
 📍 **Geographic Alerts**: Proximity warnings when ICE is reported nearby
@@ -8,33 +26,7 @@ A ## Features
 📱 **iOS Optimized**: Secure, anonymous reporting interface
 👥 **Community Verification**: Peer-reviewed sighting validation
 🚨 **Real-time Alerts**: Instant notifications for ICE activity in your area
-📊 **Pattern Analysis**: Track enforcement patterns and operational schedulesive iOS app that tracks ICE movements and operations in real-time.
-
-Communities need to know when ICE is operating in their area. This app crowdsources sightings, raids, checkpoints, and enforcement activities to keep people informed and safe.
-
-Because knowing where they are could save someone's life.
-
-## What It Does
-
-ICE operates with deliberate opacity, making it hard for communities to protect themselves. This app:
-
-• **Maps ICE activity** in real-time based on community reports
-• **Tracks raid locations** and enforcement patterns
-• **Identifies checkpoint locations** and times of operation
-• **Documents enforcement tactics** with timestamps and locations
-• **Sends alerts** when ICE activity is reported nearby
-
-The goal is transparency. ICE wants to operate in the shadows - this app brings their activities into the light so communities can make informed decisions about their safety.
-
-## Features
-
-🎯 **Pattern Detection**: Spot repeat offenders across platforms and identities
-📍 **Geographic Mapping**: See where incidents cluster 
-🔍 **Smart Filtering**: Sort by severity, type, and verification status
-📱 **iOS Optimized**: Native interface for secure reporting
-👥 **Community Verification**: Peer-reviewed incident validation
-� **Early Warning System**: Get notified when known troublemakers appear
-📊 **Behavior Analytics**: Track escalation patterns and community health
+📊 **Pattern Analysis**: Track enforcement patterns and operational schedules
 
 ## Technology Stack
 
@@ -107,11 +99,11 @@ src/
 
 ### Activity Types
 - 🚐 **Vehicle Sightings**: ICE vehicles spotted in area
-- � **Workplace Raids**: ICE targeting businesses and workplaces
+- 🏢 **Workplace Raids**: ICE targeting businesses and workplaces
 - 🏠 **Residential Operations**: ICE activity at homes or apartments
 - 🛑 **Checkpoints**: ICE checkpoints on roads or transit
 - 🏛️ **Court Activity**: ICE presence at courthouses
-- � **Detention**: Reports of ICE detentions or arrests
+- 🚨 **Detention**: Reports of ICE detentions or arrests
 
 ## Development Quick Start
 
